@@ -59,7 +59,8 @@ class _MyHomePageState extends State<MyHomePage> {
               child:
                   Image.network('${article[position].url}', fit: BoxFit.cover),
               onTap: () {
-                Navigator.pushNamed(context, UnsplashPhoto.routeName, arguments: article[position].fullUrl);
+                Navigator.pushNamed(context, UnsplashPhoto.routeName,
+                    arguments: article[position].fullUrl);
               },
             ),
             footer: Container(
